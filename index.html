@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Disaster Management System</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+ 
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- <a class="hero-brand" href="index.html" title="Home"><img alt="Logo" src="assets/img/loo.png"></a> -->
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <h1>
+          Disaster Management System
+        </h1>
+
+        <p class="tagline">
+          Image Classification of Fire And Water Hazard using Deep Learning methods.
+
+        </p>
+        <a class="btn btn-full scrollto" href="#features">Classify Image now</a>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <div id="logo" class="me-auto">
+        <a href="index.html"><img src="assets/img/logo-nav.png" alt=""></a>
+        <!-- Uncomment below if you prefer to use a text image -->
+        <!--<h1><a href="#hero">Bell</a></h1>-->
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#features">Classify Image</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Data set</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          
+          
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+     
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section class="about" id="about">
+
+      <div class="container text-center">
+        <h2>
+          About the Project
+        </h2>
+
+        <p>
+          Fire hazards are most typical in industries. It causes heavy loss to the industries and environmental pollution. Fire investigation, flood investigation assessment, fire safety management, passive and active fire protection, including detection and suppression of conventional sensors sometimes give false alarms.
+          flooding is one of the leading threats of natural disasters to human life and property, especially in densely populated urban areas. Rapid and precise extraction of the flooded areas is key to supporting emergency-response planning and providing damage assessment in both spatial and temporal measurements. 
+          In recent years, there has been a significant improvement in remote sensing image classification using Convolutional Neural Networks (CNNs). CNNs have demonstrated excellent performance on various tasks including image classification, feature extraction, and segmentation. CNNs can learn features automatically from large datasets through the organization of multi-layers of neurons and have the ability to implement nonlinear decision function
+        </p>
+
+        <div class="row stats-row">
+          <div class="stats-col text-center col-md-3 col-sm-6">
+            <div class="circle">
+              <span data-purecounter-start="0" data-purecounter-end="04" data-purecounter-duration="1" class="purecounter stats-no"></span>
+              Team Members
+            </div>
+          </div>
+
+          <div class="stats-col text-center col-md-3 col-sm-6">
+            <div class="circle">
+              <span data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="1" class="purecounter stats-no"></span>
+              Flood Dataset
+            </div>
+          </div>
+
+          <div class="stats-col text-center col-md-3 col-sm-6">
+            <div class="circle">
+              <span data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="1" class="purecounter stats-no"></span>
+              Fire Dataset
+            </div>
+          </div>
+
+          <div class="stats-col text-center col-md-3 col-sm-6">
+            <div class="circle">
+              <span data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="1" class="purecounter stats-no"></span>
+              Normal Dataset
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- End About Section -->
+
+    <!-- ======= Welcome Section ======= -->
+    <section class="welcome text-center">
+      <h2>Classify Images into type of Disaster:</h2>
+      <p>
+        The images undergo Multiple convolution, sub sampling, flattering to Classify.
+      </p>
+      <img alt="Bell - A perfect theme" class="gadgets-img hidden-md-down" src="assets/img/gadgets.png">
+    </section><!-- End Welcome Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section class="features" id="features">
+
+      <div class="container">
+        <h2 class="text-center">
+          Upload Image here!
+        </h2>
+
+        <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <div class="file-upload">
+          <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
+        
+          <div class="image-upload-wrap">
+            <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+            <div class="drag-text">
+              <h3>Drag and Drop image here! </h3>
+            </div>
+          </div>
+          <div class="file-upload-content">
+            <img class="file-upload-image" src="#" alt="your image" />
+            <div class="image-title-wrap">
+              <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+            </div>
+          </div>
+        </div>
+
+        <script type="text/javascript">
+          function readURL(input) {
+  if (input.files && input.files[0]) {
+
+    var reader = new FileReader();
+
+    reader.onload = function(e) {
+      $('.image-upload-wrap').hide();
+
+      $('.file-upload-image').attr('src', e.target.result);
+      $('.file-upload-content').show();
+
+      $('.image-title').html(input.files[0].name);
+    };
+
+    reader.readAsDataURL(input.files[0]);
+
+  } else {
+    removeUpload();
+  }
+}
+
+function removeUpload() {
+  $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+  $('.file-upload-content').hide();
+  $('.image-upload-wrap').show();
+}
+$('.image-upload-wrap').bind('dragover', function () {
+    $('.image-upload-wrap').addClass('image-dropping');
+  });
+  $('.image-upload-wrap').bind('dragleave', function () {
+    $('.image-upload-wrap').removeClass('image-dropping');
+});
+        </script>
+
+      <div class = "label">
+        <span class="label">Output</span>
+
+      </div>
+        
+        
+        
+        
+
+        
+
+          
+
+         
+        </div>
+
+        
+
+          
+
+         
+        </div>
+      </div>
+
+    </section><!-- End Features Section -->
+
+  
+
+    <!-- ======= Portfolio Section ======= -->
+    <section class="portfolio" id="portfolio">
+
+      <div class="container text-center">
+        <h2>
+          Datasets
+        </h2>
+
+        <p>
+          The model is trained and tested with 500 different images of each flood, fire and normal datasets.
+        </p>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="card card-block">
+              <a href="assets/img/porf-1.png" class="portfolio-lightbox" data-gallery="portfolioGallery"><img alt="" src="assets/img/porf-1.png">
+                <div class="portfolio-over">
+                  <div>
+                    <h3 class="card-title">
+                      Dataset - Fire 
+                    </h3>
+
+                    <p class="card-text">
+                      Example of Fire Images
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="card card-block">
+              <a href="assets/img/porf-2.jpg" class="portfolio-lightbox" data-gallery="portfolioGallery"><img alt="" src="assets/img/porf-2.jpg">
+                <div class="portfolio-over">
+                  <div>
+                    <h3 class="card-title">
+                      Dataset - Flood
+                    </h3>
+
+                    <p class="card-text">
+                      Example of Flood Dataset Image.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="card card-block">
+              <a href="assets/img/porf-3.png" class="portfolio-lightbox" data-gallery="portfolioGallery"><img alt="" src="assets/img/porf-3.png">
+                <div class="portfolio-over">
+                  <div>
+                    <h3 class="card-title">
+                      Dataset - Fire
+                    </h3>
+
+                    <p class="card-text">
+                      Example of Fire image dataset.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="card card-block">
+              <a href="assets/img/porf-4.jpg" class="portfolio-lightbox" data-gallery="portfolioGallery"><img alt="" src="assets/img/porf-4.jpg">
+                <div class="portfolio-over">
+                  <div>
+                    <h3 class="card-title">
+                      Dataset - Normal
+                    </h3>
+
+                    <p class="card-text">
+                      Example of Normal Image.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="card card-block">
+              <a href="assets/img/porf-5.jpg" class="portfolio-lightbox" data-gallery="portfolioGallery"><img alt="" src="assets/img/porf-5.jpg">
+                <div class="portfolio-over">
+                  <div>
+                    <h3 class="card-title">
+                      Dataset - Flood
+                    </h3>
+
+                    <p class="card-text">
+                      Example of Flood Image.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="card card-block">
+              <a href="assets/img/porf-6.png" class="portfolio-lightbox" data-gallery="portfolioGallery"><img alt="" src="assets/img/porf-6.png">
+                <div class="portfolio-over">
+                  <div>
+                    <h3 class="card-title">
+                      Dataset - Fire
+                    </h3>
+
+                    <p class="card-text">
+                      Example of Fire Image.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="card card-block">
+              <a href="assets/img/porf-7.jpg" class="portfolio-lightbox" data-gallery="portfolioGallery"><img alt="" src="assets/img/porf-7.jpg">
+                <div class="portfolio-over">
+                  <div>
+                    <h3 class="card-title">
+                      Dataset - Normal
+                    </h3>
+
+                    <p class="card-text">
+                      Example of Normal Image.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="card card-block">
+              <a href="assets/img/porf-8.jpg" class="portfolio-lightbox" data-gallery="portfolioGallery"><img alt="" src="assets/img/porf-8.jpg">
+                <div class="portfolio-over">
+                  <div>
+                    <h3 class="card-title">
+                      Dataset - Flood
+                    </h3>
+
+                    <p class="card-text">
+                      Example of Flood image.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section class="team" id="team">
+      <div class="container">
+        <h2 class="text-center">
+          Meet our team
+        </h2>
+
+        <div class="row">
+          <div class="col-sm-3 col-xs-6">
+            <div class="card card-block">
+              <a href="#"><img alt="" class="team-img" src="assets/img/team-1.jpeg">
+                <div class="card-title-wrap">
+                  <span class="card-title">Yash Anwane</span> <span class="card-text">Team Lead</span>
+                </div>
+
+                <div class="team-over">
+                  <h4 class="hidden-md-down">
+                    Connect with me
+                  </h4>
+
+                  <nav class="social-nav">
+                    <a href="https://www.linkedin.com/in/yash-anwane/"><i class="bi bi-linkedin"></i></a> 
+                  </nav>
+
+                  <p>
+                    Available
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-3 col-xs-6">
+            <div class="card card-block">
+              <a href="#"><img alt="" class="team-img" src="assets/img/team-2.jpeg">
+                <div class="card-title-wrap">
+                  <span class="card-title">Saniya Imroze</span> <span class="card-text">Team Member</span>
+                </div>
+
+                <div class="team-over">
+                  <h4 class="hidden-md-down">
+                    Connect with me
+                  </h4>
+
+                  <nav class="social-nav">
+                    <a href="https://www.linkedin.com/in/saniya-imroze-144a72192/"><i class="bi bi-linkedin"></i></a>
+                  </nav>
+
+                  <p>
+                    Meticulous & Creative Information Technology enthusiast.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-3 col-xs-6">
+            <div class="card card-block">
+              <a href="#"><img alt="" class="team-img" src="assets/img/team-3.jpeg">
+                <div class="card-title-wrap">
+                  <span class="card-title">Aditya Kharwar</span> <span class="card-text">Team Member</span>
+                </div>
+
+                <div class="team-over">
+                  <h4 class="hidden-md-down">
+                    Connect with me
+                  </h4>
+
+                  <nav class="social-nav">
+                    <a href="https://www.linkedin.com/in/aditya-kharwar-23b99a1a2/"><i class="bi bi-linkedin"></i></a>
+                    
+                  </nav>
+
+                  <p>
+                    I love to code in c++ and python.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-3 col-xs-6">
+            <div class="card card-block">
+              <a href="#"><img alt="" class="team-img" src="assets/img/team-4.jpg">
+                <div class="card-title-wrap">
+                  <span class="card-title">Shriya Sorte</span> <span class="card-text">Team Memeber</span>
+                </div>
+
+                <div class="team-over">
+                  <h4 class="hidden-md-down">
+                    Connect with me
+                  </h4>
+
+                  <nav class="social-nav">
+                    <a href="https://www.linkedin.com/in/shriya-sorte-34674718b/"><i class="bi bi-linkedin"></i></a>
+                  </nav>
+
+                  <p>
+                    I am a self-confident person and look forward to be an effective team worker and an IT professional.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Team Section -->
+
+    
+
+  <!-- ======= Footer ======= -->
+  <footer class="site-footer">
+    <div class="bottom">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-xs-12 text-lg-start text-center">
+            <p class="copyright-text">
+              &copy; Copyright <strong>BlackEagle</strong>. All Rights Reserved
+            </p>
+            <div class="credits">
+              
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-xs-12 text-lg-right text-center">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="index.html">Home</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#about">About Us</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#features">Features</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#portfolio">Data set</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#team">Team</a>
+              </li>
+
+              
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
